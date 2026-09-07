@@ -8,46 +8,42 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
     <script defer src="skript.js"></script>
+    <script defer src="db.js"></script>
 
 </head>
 
-<body>
+<body onload="renderPictures()">
     <header class="indexheader">
         <img src="./assets/icon/logo.svg" alt="Fotogramm logo">
     </header>
     <main class="indexmain">
         <h1>Das Chaotische Album des Desingers</h1>
         <article>
-            <img src="" alt="" class="preview_img" onclick="openDialog()">
+            <img src="./assets/img/Compsit_test2.jpg" alt="" class="preview_img" onclick="openDialog()" id="content">
+
+
+
             <dialog id="full_img_dialog">
                 <header>
                     <h2>Platzhalter Headline</h2>
                     <img src="./assets/icon/close.svg" alt="close icon" onclick="closeDialog()" class="close_button">
                 </header>
                 <main>
-                    <img src="" alt="">
+                    <img src="./assets/img/Compsit_test2.jpg" alt="">
                 </main>
                 <footer>
-                    <div class="button_wrapper"></div>
-                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_left arrow">
+                    <div class="button_wrapper" onclick="">
+                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_left">
                     </div>
                     <p>1/12</p>
-                    <div class="button_wrapper"></div>
-                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_right arrow">
+                    <div class="button_wrapper" onclick="">
+                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_right">
                     </div>
                 </footer>
             </dialog>
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
-            <img src="" alt="" class="preview_img">
+
+
+
         </article>
     </main>
     <footer class="indexfooter">
