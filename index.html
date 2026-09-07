@@ -1,27 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotogramm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
-    <script src="skript.js"></script>
+    <script defer src="skript.js"></script>
 
 </head>
+
 <body>
-    <header>
+    <header class="indexheader">
         <img src="./assets/icon/logo.svg" alt="Fotogramm logo">
     </header>
-    <main>
+    <main class="indexmain">
         <h1>Das Chaotische Album des Desingers</h1>
         <article>
-            
+            <img src="" alt="" class="preview_img" onclick="openDialog()">
+            <dialog id="full_img_dialog">
+                <header>
+                    <h2>Platzhalter Headline</h2>
+                    <img src="./assets/icon/close.svg" alt="close icon" onclick="closeDialog()" class="close_button">
+                </header>
+                <main>
+                    <img src="" alt="">
+                </main>
+                <footer>
+                    <div class="button_wrapper"></div>
+                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_left arrow">
+                    </div>
+                    <p>1/12</p>
+                    <div class="button_wrapper"></div>
+                    <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_right arrow">
+                    </div>
+                </footer>
+            </dialog>
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
+            <img src="" alt="" class="preview_img">
         </article>
     </main>
-    <footer>
+    <footer class="indexfooter">
         <img src="./assets/icon/dev_logo.svg" alt="Developer Akademie Logo">
         <p>©2023 Developer Akademie GmbH</p>
     </footer>
 </body>
+
 </html>
