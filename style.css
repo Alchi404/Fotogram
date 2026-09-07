@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     background-color: #06171E;
-    height: 81dvh;
+    min-height: 81dvh;
 
     h1 {
         font-family: 'Figtree';

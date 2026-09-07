@@ -4,11 +4,11 @@ function openDialog() {
     dialogRef.showModal();
 }
 
-function closeDialog(){
+function closeDialog() {
     dialogRef.close()
 }
 
-function renderPictures(){
+function renderPictures() {
     let imgContainer = document.getElementById('content')
 
     for (let i = 0; i < myImgs.length; i++) {
@@ -18,9 +18,9 @@ function renderPictures(){
     }
 }
 
-    function loadIMG() {
-       for (let i = 0; i < myImgs.length; i++) {
+function loadIMG() {
+    for (let i = 0; i < myImgs.length; i++) {
         let img = document.getElementById(`img${i}`);
         img.src = myImgs[i];
-       }
+    }
 }
