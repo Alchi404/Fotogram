@@ -79,7 +79,7 @@ dialog {
     header {
         display: flex;
         justify-content: space-between;
-        padding: 40px max(calc(50% - 720px), 4rem);
+        padding: 30px max(calc(50% - 720px), 4rem);
 
         h2 {
             font-family: 'Figtree';
@@ -91,10 +91,10 @@ dialog {
     }
 
     main {
-        padding: 20px max(calc(50% - 720px), 4rem);
+        padding: 10px max(calc(50% - 720px), 4rem);
 
         img {
-            height: 575px;
+            height: 375px;
             background-color: white;
         }
     }

@@ -1,7 +1,23 @@
 const dialogRef = document.getElementById("full_img_dialog")
+let opendImg = 0
 
-function openDialog() {
+function openDialog(index) {
+    opendImg = index
+
     dialogRef.showModal();
+    console.log(opendImg)
+
+    let img = document.getElementById("full_img")
+    img.src = myImgs[index]
+
+    let side = document.getElementById("test")
+    side.innerHTML = index + "/" + myImgs.length
+
+    return opendImg
+}
+
+function nextImg(index){
+    
 }
 
 function closeDialog() {
@@ -13,7 +29,7 @@ function renderPictures() {
 
     for (let i = 0; i < myImgs.length; i++) {
         imgContainer.innerHTML += /*html*/`
-           <img id="img${i}" class="preview_img" onclick="openDialog()">
+           <img id="img${i}" class="preview_img" onclick="openDialog(${i})">
         `
     }
 }
