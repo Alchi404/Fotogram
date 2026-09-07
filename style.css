@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    padding: 20px max(calc(50% - 720px), 5rem);
+    height: 80px;
+    background-color: #09212A;
+}
+
+main {
+    padding: 20px max(calc(50% - 720px), 5rem);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06171E;
+
+    h1 {
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 800;
+        color: white;
+    }
+}
+
+footer{
+    padding: 20px max(calc(50% - 720px), 5rem);
+    height: 120px;
+    background-color: #09212A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    p{
+        color: #99ACB3;
+        padding-top: 12px;
+        font-family: 'Figtree';
+        font-style: normal;
+        font-weight: 400;
+    }
+}
