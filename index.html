@@ -7,29 +7,26 @@
     <title>Fotogramm</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts.css">
+        <script defer src="db.js"></script>
     <script defer src="skript.js"></script>
-    <script defer src="db.js"></script>
 
 </head>
 
-<body onload="renderPictures()">
+<body onload="renderPictures(); loadIMG()">
     <header class="indexheader">
         <img src="./assets/icon/logo.svg" alt="Fotogramm logo">
     </header>
     <main class="indexmain">
         <h1>Das Chaotische Album des Desingers</h1>
-        <article>
-            <img src="./assets/img/Compsit_test2.jpg" alt="" class="preview_img" onclick="openDialog()" id="content">
-
-
-
-            <dialog id="full_img_dialog">
+        <article id="content">
+        </article>
+        <dialog id="full_img_dialog">
                 <header>
                     <h2>Platzhalter Headline</h2>
                     <img src="./assets/icon/close.svg" alt="close icon" onclick="closeDialog()" class="close_button">
                 </header>
                 <main>
-                    <img src="./assets/img/Compsit_test2.jpg" alt="">
+                    <img src="./assets/img/01_erstes_Compsit.jpg" alt="">
                 </main>
                 <footer>
                     <div class="button_wrapper" onclick="">
@@ -41,10 +38,6 @@
                     </div>
                 </footer>
             </dialog>
-
-
-
-        </article>
     </main>
     <footer class="indexfooter">
         <img src="./assets/icon/dev_logo.svg" alt="Developer Akademie Logo">
