@@ -6,18 +6,31 @@ function openDialog(index) {
 
     dialogRef.showModal();
     console.log(opendImg)
-
-    let img = document.getElementById("full_img")
-    img.src = myImgs[index]
-
-    let side = document.getElementById("test")
-    side.innerHTML = index + "/" + myImgs.length
-
-    return opendImg
+    updateDialog()
 }
 
-function nextImg(index){
-    
+function updateDialog() {
+    let img = document.getElementById("full_img")
+    img.src = myImgs[opendImg]
+
+    let side = document.getElementById("test")
+    side.innerHTML = (opendImg + 1) + "/" + myImgs.length
+}
+
+function nextImg(){
+    opendImg++
+    if (opendImg > myImgs.length - 1) {
+        opendImg = 0
+    }
+    updateDialog()
+}
+
+function previousImg() {
+    opendImg--
+    if (opendImg < 0 ) {
+        opendImg = 11
+    }
+    updateDialog()
 }
 
 function closeDialog() {
