@@ -7,7 +7,7 @@
     <title>Fotogramm</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./fonts.css">
-        <script defer src="db.js"></script>
+    <script defer src="db.js"></script>
     <script defer src="./skript.js"></script>
 
 </head>
@@ -20,24 +20,25 @@
         <h1>The Chaotic collection of <br> Alchi404</h1>
         <article id="content">
         </article>
-        <dialog id="full_img_dialog">
-                <header>
-                    <h2 id="dialogTitle"></h2>
-                    <img src="./assets/icon/close.svg" alt="close icon" onclick="closeDialog()" class="close_button">
-                </header>
-                <main>
-                    <img alt="" id="full_img">
-                </main>
-                <footer>
-                    <div class="button_wrapper" onclick="previousImg()">
+        <dialog id="full_img_dialog" tabindex="-1">
+            <header>
+                <h2 id="dialogTitle"></h2>
+                <img src="./assets/icon/close.svg" alt="close icon" onclick="closeDialog()" class="close_button"
+                    tabindex="0" onkeypress="closeDialog()">
+            </header>
+            <main>
+                <img alt="" id="full_img">
+            </main>
+            <footer>
+                <div class="button_wrapper" onclick="previousImg()" tabindex="0" onkeypress="previousImg()">
                     <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_left">
-                    </div>
-                    <p id="slideCounter"></p>
-                    <div class="button_wrapper" onclick="nextImg()">
+                </div>
+                <p id="slideCounter"></p>
+                <div class="button_wrapper" onclick="nextImg()" tabindex="0" onkeypress="nextImg()">
                     <img src="./assets/icon/arrow.svg" alt="arrow icon" class="arrow_right">
-                    </div>
-                </footer>
-            </dialog>
+                </div>
+            </footer>
+        </dialog>
     </main>
     <footer class="indexfooter">
         <img src="./assets/icon/dev_logo.svg" alt="Developer Akademie Logo">

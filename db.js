@@ -1,16 +1,16 @@
 let myImgs = [
-"./assets/img/01_erstes_Compsit.webp",
-"./assets/img/02_Duplication.webp",
-"./assets/img/03_Eulenkatzeeee.webp",
-"./assets/img/04_Gondor_Polaris2.webp",
-"./assets/img/05_Guts_polaris.webp",
-"./assets/img/06_hasi.webp",
-"./assets/img/07_Hornet_polaris2.webp",
-"./assets/img/08_Link_comkposite.webp",
-"./assets/img/09_Majoras_Maske_polaris2.webp",
-"./assets/img/10_legger.webp",
-"./assets/img/11_Pyramid_head_Polaris2.webp",
-"./assets/img/12_Rostock_Natur.webp",
+    "./assets/img/01_erstes_Compsit.webp",
+    "./assets/img/02_Duplication.webp",
+    "./assets/img/03_Eulenkatzeeee.webp",
+    "./assets/img/04_Gondor_Polaris2.webp",
+    "./assets/img/05_Guts_polaris.webp",
+    "./assets/img/06_hasi.webp",
+    "./assets/img/07_Hornet_polaris2.webp",
+    "./assets/img/08_Link_comkposite.webp",
+    "./assets/img/09_Majoras_Maske_polaris2.webp",
+    "./assets/img/10_legger.webp",
+    "./assets/img/11_Pyramid_head_Polaris2.webp",
+    "./assets/img/12_Rostock_Natur.webp",
 ]
 
 let myImgsAlt = [

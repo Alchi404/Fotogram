@@ -20,7 +20,7 @@ function updateDialog() {
     side.innerHTML = (opendImg + 1) + "/" + myImgs.length
 }
 
-function nextImg(){
+function nextImg() {
     opendImg++
     if (opendImg > myImgs.length - 1) {
         opendImg = 0
@@ -30,7 +30,7 @@ function nextImg(){
 
 function previousImg() {
     opendImg--
-    if (opendImg < 0 ) {
+    if (opendImg < 0) {
         opendImg = 11
     }
     updateDialog()
@@ -45,7 +45,7 @@ function renderPictures() {
 
     for (let i = 0; i < myImgs.length; i++) {
         imgContainer.innerHTML += /*html*/`
-           <img id="img${i}" class="preview_img" onclick="openDialog(${i})">
+           <img id="img${i}" class="preview_img" onclick="openDialog(${i})" tabindex="0" onkeypress="openDialog(${i})">
         `
     }
 }
