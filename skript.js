@@ -5,15 +5,18 @@ function openDialog(index) {
     opendImg = index
 
     dialogRef.showModal();
-    console.log(opendImg)
     updateDialog()
 }
 
 function updateDialog() {
     let img = document.getElementById("full_img")
     img.src = myImgs[opendImg]
+    img.alt = myImgsAlt[opendImg]
 
-    let side = document.getElementById("test")
+    let title = document.getElementById("dialogTitle")
+    title.innerHTML = myImgsTitle[opendImg]
+
+    let side = document.getElementById("slideCounter")
     side.innerHTML = (opendImg + 1) + "/" + myImgs.length
 }
 
